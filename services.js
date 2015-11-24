@@ -19,10 +19,9 @@
         $http.put(url + '/' + editedRace._id, editedRace);
       };
 
-      var deleteRace = function (passedId) {
-        $http.delete(url + '/' + passedId).success(function(){
-          console.log(passedId)
-        })
+      var deleteRace = function (race) {
+        $http.delete(url + '/' + race._id).success
+        
 
       };
 

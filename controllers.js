@@ -42,19 +42,23 @@
           description: "The point-to-point course starts outside Dodger Stadium. The route then takes a sightseeing tour through L.A. hotspots, including Hollywood and Chinatown, finishing by the beach in Santa Monica. Mixed in with the tens of thousands of runners and hundreds of thousands of spectators, you may spot a celeb or two. Chef Gordon Ramsay, Flea from the Red Hot Chili Peppers, and Lord of the Rings star Sean Astin have all crossed the finish line, among many others.",
         }
       ];
+      var editRace = function() {
+        RacesService.getRaces().success(function(races) {
+            $scope.runRaces = races;
+        });
+      };
+
+      editRace();
 
 
       $scope.addRace = function (newRace) {
         console.log(newRace);
         RacesService.createRace(newRace);
       };
-      $scope.editRace = function (editedRace) {
-        console.log(editedRace);
-        RacesService.editRace(editedRace);
-      };
-      $scope.deleteRace = function (passedId) {
-        console.log(deletedRace);
-        RacesService.deleteRace(passedId);
+
+      $scope.deleteRace = function (race) {
+        console.log(deleteRace);
+        RacesService.deleteRace(race);
       };
 
 
