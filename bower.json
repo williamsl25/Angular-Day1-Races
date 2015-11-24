@@ -1,0 +1,24 @@
+{
+  "name": "Angular_Day1",
+  "authors": [
+    "Lindsay Williams <williamsl25@yahoo.com>"
+  ],
+  "description": "recipes in angular",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "node-sass": "~3.4.2"
+  }
+}

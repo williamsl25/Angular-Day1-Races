@@ -1,0 +1,12 @@
+
+  <h3>List Races page</h3>
+
+  <section ng-repeat="race in runRaces">
+    <h3>{{race.title}}</h3>
+    <img ng-src="{{race.image}}" alt="" />
+    <div>{{race.date}}</div>
+    <p>
+      {{race.description}}
+    </p>
+
+  </section>
